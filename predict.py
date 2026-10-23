@@ -13,13 +13,13 @@ st.title('Customer Clustering App')
 st.write('Enter the customer details: ')
 
 st.header('Customer Age')
-age=st.number_input('Age',10,65,step=1)
+age=st.number_input('Age',10,100,step=1)
 st.header('Customer Spent Time')
-time=st.number_input('Average Spend',5,50)
+time=st.number_input('Average Spend',0.0,1000.0)
 st.header('Visits per week')
-visits=st.number_input('Visits per week',1,7,step=1)
+visits=st.number_input('Visits per week',0,15,step=1)
 st.header('Promotion Interest')
-interest=st.number_input('Promotion Interest',1,11,step=1)
+interest=st.number_input('Promotion Interest',0,10,step=1)
 
 def predict(age,time,visits,interest):
     input=(age,time,visits,interest)
